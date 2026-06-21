@@ -1,0 +1,299 @@
+/* ===== Button Styles ===== */
+
+/* Base button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn .icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Sizes */
+.btn-sm {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.btn-lg {
+  padding: 16px 40px;
+  font-size: 18px;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Primary */
+.btn-primary {
+  background: var(--primary-dark);
+  color: var(--pure-white);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--primary-medium);
+  box-shadow: 0 8px 24px rgba(0, 72, 50, 0.25);
+}
+
+/* Secondary */
+.btn-secondary {
+  background: transparent;
+  color: var(--primary-dark);
+  border: 2px solid var(--primary-dark);
+}
+
+.btn-secondary:hover {
+  background: var(--primary-dark);
+  color: var(--pure-white);
+}
+
+/* Ghost (on dark backgrounds) */
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--pure-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* WhatsApp */
+.btn-whatsapp {
+  background: var(--whatsapp-green);
+  color: var(--pure-white);
+  border: none;
+}
+
+.btn-whatsapp:hover {
+  background: #1fad52;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+}
+
+/* Facebook */
+.btn-facebook {
+  background: var(--facebook-blue);
+  color: var(--pure-white);
+  border: none;
+}
+
+.btn-facebook:hover {
+  background: #1565C0;
+}
+
+/* Text link style */
+.btn-text {
+  background: none;
+  color: var(--primary-medium);
+  padding: 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn-text:hover {
+  transform: none;
+  color: var(--primary-dark);
+}
+
+.btn-text .icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.btn-text:hover .icon {
+  transform: translateX(4px);
+}
+
+/* Tag/Pill */
+.tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ===== Floating Buttons ===== */
+.float-btn {
+  position: fixed;
+  z-index: var(--z-floating);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.float-btn:hover {
+  transform: scale(1.1);
+}
+
+.float-whatsapp {
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background: var(--whatsapp-green);
+  animation: float-pulse 2s ease infinite;
+}
+
+.float-phone {
+  bottom: 24px;
+  left: 24px;
+  width: 48px;
+  height: 48px;
+  background: var(--primary-dark);
+}
+
+.float-backtop {
+  bottom: 24px;
+  right: 92px;
+  width: 44px;
+  height: 44px;
+  background: rgba(0, 72, 50, 0.8);
+  color: var(--pure-white);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.float-backtop.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.float-backtop:hover {
+  background: var(--primary-dark);
+}
+
+@media (max-width: 767px) {
+  .float-whatsapp {
+    bottom: 16px;
+    right: 16px;
+  }
+  .float-phone {
+    bottom: 16px;
+    left: 16px;
+  }
+  .float-backtop {
+    bottom: 18px;
+    left: 50%;
+    right: auto;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    transform: translateX(-50%);
+    background: rgba(0, 72, 50, 0.88);
+  }
+  .float-backtop:hover {
+    transform: translateX(-50%) scale(1.08);
+  }
+}
+
+
+/* ===== Hotel Canbo custom button polish ===== */
+.cta-section .cta-book-now {
+  border: 2px solid var(--pure-white) !important;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--pure-white);
+}
+
+.cta-section .cta-book-now:hover {
+  border-color: var(--gold-light) !important;
+  background: rgba(248, 231, 161, 0.12);
+  color: var(--gold-light);
+  box-shadow: 0 0 22px rgba(248, 231, 161, 0.28);
+}
+
+.hero-home .hero-cta-btn {
+  border-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.hero-home .hero-cta-btn:hover,
+.hero-home .hero-cta-btn:focus-visible {
+  border-color: var(--gold-light);
+  background: rgba(255, 255, 255, 0.20);
+  color: var(--pure-white);
+  box-shadow: 0 0 22px rgba(248, 231, 161, 0.38), 0 14px 30px rgba(0, 0, 0, 0.22);
+  transform: translateY(-3px);
+  outline: none;
+}
+
+.hero-home .hero-cta-btn:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* ===== Floating button layout refinement ===== */
+.float-phone {
+  display: none !important;
+}
+
+.float-backtop {
+  left: 24px !important;
+  right: auto !important;
+  bottom: 24px !important;
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 72, 50, 0.92);
+  transform: none !important;
+}
+
+.float-backtop:hover,
+.float-backtop:focus-visible {
+  background: var(--primary-dark);
+  transform: scale(1.08) !important;
+  outline: none;
+}
+
+.float-whatsapp {
+  right: 24px;
+  bottom: 24px;
+}
+
+@media (max-width: 767px) {
+  .float-backtop {
+    left: 16px !important;
+    right: auto !important;
+    bottom: 16px !important;
+    width: 48px;
+    height: 48px;
+    transform: none !important;
+  }
+  .float-backtop:hover,
+  .float-backtop:focus-visible {
+    transform: scale(1.08) !important;
+  }
+  .float-whatsapp {
+    right: 16px;
+    bottom: 16px;
+  }
+}
+

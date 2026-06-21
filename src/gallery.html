@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Canbo Gallery | Hotel Resort Photos</title>
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7R6MKWCJYK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7R6MKWCJYK');
+</script>
+  <meta name="description" content="Browse photos of Hotel Canbo — rooms, restaurant, outdoor areas, facilities, and the beautiful surroundings of Bibile, Uva Province, Sri Lanka.">
+  <link rel="canonical" href="https://canbohotel.com/gallery.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/site.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="page-loader" id="page-loader">
+    <div class="loader-logo">HOTEL CANBO</div>
+    <div class="loader-dots"><span></span><span></span><span></span></div>
+  </div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-logo"><img src="./assets/images/logo/logo.jpeg" alt="Hotel Canbo Logo" width="40" height="40"><span>HOTEL CANBO</span></a>
+      <nav class="navbar-links" role="navigation" aria-label="Main Navigation">
+        <a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="gallery.html">Gallery</a><a href="restaurant.html">Restaurant</a><a href="wedding.html">Wedding</a><a href="attractions.html">Nearby Attractions</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary navbar-cta">Book Now</a>
+      <button class="navbar-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="nav-overlay">
+    <button type="button" class="nav-close" id="nav-close" aria-label="Close menu"><span aria-hidden="true">&times;</span></button>
+    <div class="nav-overlay-brand">
+      <img src="./assets/images/logo/logo.jpeg" alt="Hotel Canbo Logo" width="58" height="58">
+      <span>HOTEL CANBO</span>
+    </div>
+    <a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="gallery.html">Gallery</a><a href="restaurant.html">Restaurant</a><a href="wedding.html">Wedding</a><a href="attractions.html">Nearby Attractions</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero hero-page" aria-label="Gallery Hero">
+      <div class="hero-bg"><img src="./assets/images/gallery/gallery-hero.jpg" alt="Charming tropical hotel exterior at golden hour" loading="eager"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="h1 animate-fade-in-up animate-fade-in-up-delay-1">Gallery</h1>
+        <p class="subtitle animate-fade-in-up animate-fade-in-up-delay-2">Take a closer look at our rooms, dining, facilities, and relaxing spaces.</p>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section-sm">
+      <div class="container container-narrow text-center reveal">
+        <p class="body-lg" style="color:var(--medium-gray);">Welcome to our gallery. Browse through a collection of images showcasing the beauty of Hotel Canbo — from our comfortable rooms and delicious dining to our lush gardens and the stunning landscapes of Bibile and Uva Province.</p>
+      </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section style="padding-bottom:32px;">
+      <div class="container">
+        <div class="reveal" id="gallery-filters" style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+          <button class="filter-btn active" data-filter="all" style="padding:10px 24px;border-radius:24px;font-size:14px;font-weight:500;background:var(--primary-dark);color:#fff;border:none;cursor:pointer;transition:all 0.3s ease;">All</button>
+          <button class="filter-btn" data-filter="rooms" style="padding:10px 24px;border-radius:24px;font-size:14px;font-weight:500;background:var(--light-gray);color:var(--medium-gray);border:none;cursor:pointer;transition:all 0.3s ease;">Rooms</button>
+          <button class="filter-btn" data-filter="restaurant" style="padding:10px 24px;border-radius:24px;font-size:14px;font-weight:500;background:var(--light-gray);color:var(--medium-gray);border:none;cursor:pointer;transition:all 0.3s ease;">Restaurant</button>
+          <button class="filter-btn" data-filter="outdoor" style="padding:10px 24px;border-radius:24px;font-size:14px;font-weight:500;background:var(--light-gray);color:var(--medium-gray);border:none;cursor:pointer;transition:all 0.3s ease;">Outdoor</button>
+          <button class="filter-btn" data-filter="lobby" style="padding:10px 24px;border-radius:24px;font-size:14px;font-weight:500;background:var(--light-gray);color:var(--medium-gray);border:none;cursor:pointer;transition:all 0.3s ease;">Lobby</button>
+          <button class="filter-btn" data-filter="facilities" style="padding:10px 24px;border-radius:24px;font-size:14px;font-weight:500;background:var(--light-gray);color:var(--medium-gray);border:none;cursor:pointer;transition:all 0.3s ease;">Facilities</button>
+          <button class="filter-btn" data-filter="nearby" style="padding:10px 24px;border-radius:24px;font-size:14px;font-weight:500;background:var(--light-gray);color:var(--medium-gray);border:none;cursor:pointer;transition:all 0.3s ease;">Nearby Views</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Slider -->
+    <section style="background:var(--sand);" class="section-md">
+      <div class="container">
+        <div class="slider reveal" data-slider>
+          <div class="slider-container">
+            <div class="slider-slide active"><img src="./assets/images/gallery/slider-1.jpg" alt="Hotel Canbo tropical garden grounds" loading="lazy"><div class="slider-caption">Beautiful tropical gardens surrounding Hotel Canbo</div></div>
+            <div class="slider-slide"><img src="./assets/images/gallery/slider-2.jpg" alt="Inviting hotel room interior with garden view" loading="lazy"><div class="slider-caption">Comfortable rooms with beautiful views</div></div>
+            <div class="slider-slide"><img src="./assets/images/gallery/slider-3.jpg" alt="Outdoor restaurant dining at sunset" loading="lazy"><div class="slider-caption">Dining under the stars in our garden restaurant</div></div>
+            <div class="slider-slide"><img src="./assets/images/gallery/slider-4.jpg" alt="Scenic Bibile landscape in Uva Province" loading="lazy"><div class="slider-caption">The stunning landscapes surrounding Bibile</div></div>
+            <div class="slider-slide"><img src="./assets/images/gallery/slider-5.jpg" alt="Warm hotel lobby and reception area" loading="lazy"><div class="slider-caption">Our warm and welcoming lobby</div></div>
+          </div>
+          <button class="slider-arrow prev" aria-label="Previous slide"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="slider-arrow next" aria-label="Next slide"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="slider-dots"><button class="slider-dot active" aria-label="Slide 1"></button><button class="slider-dot" aria-label="Slide 2"></button><button class="slider-dot" aria-label="Slide 3"></button><button class="slider-dot" aria-label="Slide 4"></button><button class="slider-dot" aria-label="Slide 5"></button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section-md">
+      <div class="container">
+        <div class="grid-3" id="gallery-grid" data-lightbox style="gap:16px;">
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="rooms"><img src="./assets/images/home/room-standard.jpg" alt="Standard room interior" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="rooms"><img src="./assets/images/home/room-deluxe.jpg" alt="Deluxe room with garden view" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="rooms"><img src="./assets/images/home/room-family.jpg" alt="Family room with multiple beds" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="rooms"><img src="./assets/images/rooms/room-suite.jpg" alt="Suite living area" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="restaurant"><img src="./assets/images/home/gallery-2.jpg" alt="Sri Lankan rice and curry spread" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="restaurant"><img src="./assets/images/restaurant/dish-rice-curry.jpg" alt="Traditional rice and curry meal" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="restaurant"><img src="./assets/images/gallery/gallery-breakfast.jpg" alt="Colorful breakfast spread" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="restaurant"><img src="./assets/images/gallery/gallery-chef.jpg" alt="Chef preparing local dish" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="outdoor"><img src="./assets/images/home/gallery-1.jpg" alt="Tropical garden pathway" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="outdoor"><img src="./assets/images/home/gallery-3.jpg" alt="Swimming pool with palm trees" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="outdoor"><img src="./assets/images/home/gallery-5.jpg" alt="Hotel exterior facade" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="lobby"><img src="./assets/images/gallery/slider-5.jpg" alt="Hotel lobby interior" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="facilities"><img src="./assets/images/gallery/gallery-parking.jpg" alt="Parking area with greenery" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="facilities"><img src="./assets/images/home/gallery-6.jpg" alt="Elegant hotel bathroom" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="nearby"><img src="./assets/images/attractions/attraction-madulsima.jpg" alt="Madulsima hill country views" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+          <div class="gallery-item img-zoom reveal reveal-scale" data-lightbox-item data-category="nearby"><img src="./assets/images/attractions/attraction-nilgala.jpg" alt="Nilgala Forest area" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="background:var(--primary-light);" class="section-md">
+      <div class="container container-narrow text-center">
+        <div class="reveal">
+          <h2 style="color:var(--primary-dark);">Like what you see?</h2>
+          <p class="subtitle" style="margin-top:8px;">Book your stay at Hotel Canbo and experience it all in person.</p>
+          <div class="btn-group" style="margin-top:32px;">
+            <a href="contact.html" class="btn btn-primary">Book Now</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            <a href="rooms.html" class="btn btn-secondary">Explore Rooms</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><div class="logo"><img src="./assets/images/logo/logo.jpeg" alt="Hotel Canbo Logo"> HOTEL CANBO</div><p class="tagline">Experience Comfort & Hospitality</p><p>A peaceful hotel resort in Bibile, Uva Province, Sri Lanka.</p></div>
+        <div class="footer-links"><h4>Quick Links</h4><a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="gallery.html">Gallery</a><a href="restaurant.html">Restaurant</a><a href="wedding.html">Wedding</a><a href="attractions.html">Nearby Attractions</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+        <div class="footer-links"><h4>Services</h4><a href="restaurant.html">Outdoor Seating</a><a href="restaurant.html">Dine-in</a><a href="restaurant.html">Delivery</a><a href="restaurant.html">Takeout</a><a href="contact.html">Reservations</a><a href="contact.html">Booking Inquiry</a><a href="wedding.html">Wedding Packages</a></div>
+        <div class="footer-contact"><h4>Contact Us</h4><p>Hotel Canbo, Mahiyangana Road, Bibile, Sri Lanka, 91500</p><p><a href="tel:0777778744">077 777 8744</a></p><p><a href="https://wa.me/94777778744" target="_blank" rel="noopener noreferrer">WhatsApp: +94 77 777 8744</a></p><p><a href="mailto:canbohotel@gmail.com">canbohotel@gmail.com</a></p><p>Website: canbohotel.com</p><p>Facebook / Messenger: Hotel Canbo</p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span id="current-year">2026</span> Hotel Canbo. All rights reserved.</p><p>Design By <a href="https://www.facebook.com/share/18t7UJMg8G/" target="_blank" rel="noopener noreferrer" class="footer-credit-link">Growth Code Studio</a></p></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/94777778744" target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp animate-pulse" aria-label="Chat on WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  <button class="float-btn float-backtop" id="back-to-top" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+</body>
+</html>

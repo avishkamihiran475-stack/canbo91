@@ -1,0 +1,308 @@
+/* ===== Card Component ===== */
+.card {
+  background: var(--pure-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 24px;
+}
+
+.card-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-size: 15px;
+  color: var(--medium-gray);
+  line-height: 1.6;
+}
+
+/* ===== Room Card ===== */
+.room-card {
+  background: var(--pure-white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.room-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.room-card .card-img {
+  aspect-ratio: 16 / 10;
+}
+
+.room-card .room-meta {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--medium-gray);
+}
+
+.room-card .room-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.room-card .room-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.room-card .room-amenities .amenity-tag {
+  padding: 4px 10px;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.room-card .room-price {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.room-card .room-price .price-note {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+
+.room-card .btn {
+  margin-top: 16px;
+}
+
+/* ===== Attraction Card (horizontal) ===== */
+.attraction-card {
+  display: flex;
+  background: var(--pure-white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.attraction-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.attraction-card .card-img {
+  width: 40%;
+  min-height: 200px;
+  flex-shrink: 0;
+}
+
+.attraction-card .card-img img {
+  height: 100%;
+}
+
+.attraction-card .card-body {
+  padding: 24px;
+  flex: 1;
+}
+
+.attraction-card .card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--medium-gray);
+}
+
+@media (max-width: 767px) {
+  .attraction-card {
+    flex-direction: column;
+  }
+  .attraction-card .card-img {
+    width: 100%;
+    min-height: auto;
+    aspect-ratio: 4/3;
+  }
+}
+
+/* ===== Info Card ===== */
+.info-card {
+  background: var(--pure-white);
+  border: 1px solid var(--light-border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: border-color 0.3s ease;
+}
+
+.info-card:hover {
+  border-color: var(--primary-medium);
+}
+
+.info-card .icon {
+  width: 36px;
+  height: 36px;
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+}
+
+.info-card .label {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--medium-gray);
+}
+
+.info-card .value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-top: 4px;
+}
+
+/* ===== Price Card ===== */
+.price-card {
+  background: var(--pure-white);
+  border: 1px solid var(--light-border);
+  border-radius: 12px;
+  padding: 28px;
+  text-align: center;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+  border-color: var(--primary-medium);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.price-card .room-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.price-card .divider {
+  width: 40px;
+  height: 1px;
+  background: var(--light-border);
+  margin: 16px auto;
+}
+
+.price-card .price {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.price-card .price span {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--medium-gray);
+}
+
+.price-card .features {
+  margin-top: 16px;
+  text-align: left;
+}
+
+.price-card .features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--medium-gray);
+  padding: 4px 0;
+}
+
+.price-card .features li .icon {
+  width: 16px;
+  height: 16px;
+  color: var(--primary-medium);
+  flex-shrink: 0;
+}
+
+/* ===== Service Card ===== */
+.service-card {
+  background: var(--pure-white);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.service-card .icon-wrap {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-light);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.service-card .icon-wrap .icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-dark);
+}
+
+.service-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.service-card p {
+  font-size: 14px;
+  color: var(--medium-gray);
+  margin-top: 8px;
+  line-height: 1.5;
+}
